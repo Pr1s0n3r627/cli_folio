@@ -1,0 +1,99 @@
+ About Me
+ 
+  
+ I’m a software developer with a strong focus on building mobile and web applications. Skilled in Flutter, 
+ Python, JavaScript, and more, I thrive on turning complex ideas into functional, efficient, and user-friendly 
+ solutions. Let’s build something meaningful.
+  
+ 
+<section id="projects">
+ <h1 class="Projects">
+ Projects 
+
+ <ul>
+ 
+ <li>
+ <h3>Autotypers</h3>
+  Developed autotypers in Python, Go, and C++ to automate repetitive typing tasks with high efficiency. 
+ <a href="https://github.com/Pr1s0n3r627/The-Typer" target="_blank">Python</a>
+ <a href="LINK_TO_GITHUB" target="_blank">Golang</a>
+ <a href="https://github.com/Pr1s0n3r627/auto_typer_cpp" target="_blank">C++ (Ongoing)</a>
+ </li>
+ 
+ <li>
+ <h3>Portfolio website</h3>
+  This portfolio showcases my work as a software developer, from mobile apps to AI projects. I created this during my trip to my sister's house for Rakshabandhan, blending passion and creativity into each project. 
+ <a href="https://github.com/Pr1s0n3r627/website-building" target="_blank">View on GitHub</a>
+ </li>
+
+ <li>
+ <h3>Keylogger</h3>
+  This keylogger is a personal project that I developed to understand how keyloggers work and to enhance my knowledge of cybersecurity. I also got full marks for this as i submitted it as my Python semester project. It was also able to to run undetected via Bitdefender AntiVirus 
+ <a href="https://github.com/Pr1s0n3r627/key-logger" target="_blank">View on GitHub</a>
+ </li>
+
+ </ul>
+
+ Ongoing Projects 
+ 
+ <ul>
+ 
+ <li>
+ 
+ <h3>Break the Cycle</h3>
+  A minimalist Flutter app to track and break unhealthy habits, built with customized UI for each user. 
+ <a href="https://github.com/Pr1s0n3r627/flutter-breaking-habits-app" target="_blank">View on GitHub</a>
+
+ </li>
+
+ <li>
+ 
+ <h3>Crop Recommendation System</h3>
+  A hackathon project on a crop recommendation system using AI. Led the team, designed the UI, and conducted research. 
+ <a href="https://github.com/Pr1s0n3r627/hackaccino---project" target="_blank">View on GitHub</a>
+ <!--a href="LINK_TO_DEVFOLIO" target="_blank">View on Devfolio</!--a-->
+ 
+ </li>
+ 
+ <li>
+ 
+ <h3>AI Song Recommender</h3>
+  An AI system that recommends songs based on emotional analysis of lyrics using Python and Spotify API. 
+ <a href="https://github.com/Pr1s0n3r627/music-recommendation-using-machine-learning" target="_blank">View on GitHub</a>
+ 
+ </li>
+ 
+ <li>
+ 
+ <h3>Ultra-Ego Chatbot</h3>
+  A sarcastic AI chatbot created for personal use, with a focus on NLP and personality-based responses. 
+ <!--<a href="LINK_TO_GITHUB" target="_blank">View on GitHub</-a>-->
+ 
+ </li>
+ </h1>
+ </ul>
+
+ </section>
+ 
+<section id="skills">
+ Technical Skills 
+ <ul>
+ <li><strong>Languages:</strong> Dart, Python, Java, C++, Go, Bash</li>
+ <li><strong>Frameworks:</strong> Flutter, React</li>
+ <li><strong>Tools:</strong> Git, Docker, Kubernetes</li>
+ <li><strong>Specializations:</strong> App Development, AI, DevOps Automation, Website - frontend</li>
+ </ul>
+ </section>
+ 
+ 
+<section id="contact">
+ Contact Me 
+  Let’s connect on social media or collaborate on exciting projects! 
+ <ul>
+ <li><a href="https://github.com/Pr1s0n3r627" target="_blank">GitHub</a></li>
+ <li><a href="https://www.linkedin.com/in/kshitij-sahdev-venv/" target="_blank">LinkedIn</a></li>
+ <li><a href="https://www.instagram.com/kshitijsahdev_/" target="_blank">Instagram</a></li>
+ </ul>
+  Or reach me directly at <a href="mailto:example@example.com">kshitijsahdev5@gmail.com</a> 
+ </section>
+ 

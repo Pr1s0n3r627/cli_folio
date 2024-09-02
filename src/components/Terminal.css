@@ -1,124 +1,90 @@
-/* Terminal container styling */
-.terminal-container {
-    background-color: #1e1e1e; /* Dark background */
-    color: #00ff41; /* Classic hacker green */
-    font-family: 'Courier New', Courier, monospace; /* Typing-style font */
-    font-size: 16px;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100vw;
-    height: 100vh;
-    overflow-y: auto;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Adding depth */
-  }
-  
-  /* Output lines styling */
-  .terminal-output {
-    white-space: pre-wrap;
-    line-height: 1.5;
-  }
-  
-  /* Each command output */
-  .output-line {
-    margin-bottom: 15px;
-  }
-  
-  /* Terminal input styling */
-  .terminal-input {
-    width: 100%;
-    padding: 12px;
-    background-color: #121212;
-    border: none;
-    color: #00ff41;
-    outline: none;
+/* Terminal.css */
+
+/* General Styles */
+.terminal {
+    background-color: #000;
+    color: #00ff00; /* Classic green text */
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
-    border-radius: 5px;
-    margin-top: 10px;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
   
-  /* Project titles */
-  .project-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #61dafb;
-    margin-bottom: 5px;
+  /* Output Section */
+  .output {
+    white-space: pre-wrap; /* Preserve line breaks and spaces */
+    margin-bottom: 10px;
+    flex: 1;
+    overflow-y: auto; /* Allow scrolling if content overflows */
   }
   
-  /* Project description */
-  .project-description {
-    color: #f5f5f5;
+  /* Individual Line Styling */
+  .line {
     margin-bottom: 10px;
   }
   
-  /* Project GitHub link */
-  .project-link {
-    color: #61dafb;
-    text-decoration: none;
-  }
-  
-  .project-link:hover {
-    text-decoration: underline;
-  }
-  
-  /* About command photo styling */
-  .about-photo {
+  /* Photo Styling */
+  .photo {
+    max-width: 50%; /* Ensure photo fits within terminal width */
+    border-radius: 8px;
+    margin-top: 10px;
     display: block;
-    margin: 20px 0;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; /* Circular photo */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Photo shadow */
+    /* Center the photo horizontally */
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  /* Contact information styling */
-  .contact-info a {
-    color: #61dafb;
-    text-decoration: none;
+  /* Input Field Styling */
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00ff00;
+    background-color: #000;
+    color: #00ff00;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    /* Add transition for focus effect */
+    transition: border-color 0.3s ease-in-out;
   }
   
-  .contact-info a:hover {
-    text-decoration: underline;
+  /* Placeholder Text Styling */
+  input::placeholder {
+    color: #00ff00;
   }
   
-  /* Animation for the input line cursor */
-  .terminal-input::placeholder {
-    color: #00ff41;
-    animation: blink 1s step-end infinite;
+  /* Animation for Text Typing Effect */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
   }
   
-  /* Blink effect for the cursor */
+  /* Animation for Cursor Blink */
   @keyframes blink {
-    from, to {
-      color: transparent;
-    }
-    50% {
-      color: #00ff41;
-    }
+    0% { border-right-color: rgba(0, 255, 0, 0.75); }
+    100% { border-right-color: transparent; }
   }
   
-  /* Smooth fade-in animation for each command's output */
-  .output-line {
-    animation: fadeIn 0.5s ease-in-out;
+  /* Typing Effect for Command Output */
+  .typing-effect {
+    display: inline-block;
+    overflow: hidden; /* Hide overflow text */
+    white-space: nowrap;
+    border-right: 2px solid #00ff00; /* Cursor effect */
+    animation: typing 2s steps(30, end), blink 0.75s step-end infinite;
   }
   
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  .about-photo {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 150px;
-    height: 150px;
-    float: right; /* Float to the right of the text */
-    border-radius: 50%; /* Make it circular */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+  /* Example usage */
+  .typing-example {
+    color: #00ff00;
+    border-right: 2px solid #00ff00;
+    padding-right: 5px; /* Add space for the cursor */
   }
   
