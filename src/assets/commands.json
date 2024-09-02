@@ -1,0 +1,35 @@
+{
+  "commands": {
+    "help": "Available commands: help, about, projects, easter-egg.",
+    "about": "This is a CLI portfolio for Kshitij Sahdev. It showcases skills in web development and AI.",
+    "projects": "Projects include Break the Cycle, AI Song Recommender, and more.",
+    "hello": "hey",
+    "ls": "file1.txt\nfile2.txt\ndirectory1\ndirectory2",
+    "pwd": "/home/user",
+    "cd": "Usage: cd <directory> — Changes the current directory.",
+    "mkdir": "Usage: mkdir <directory> — Creates a new directory.",
+    "rm": "Usage: rm <file|directory> — Removes files or directories.",
+    "cp": "Usage: cp <source> <destination> — Copies files or directories.",
+    "mv": "Usage: mv <source> <destination> — Moves or renames files or directories.",
+    "touch": "Usage: touch <file> — Creates an empty file or updates the timestamp.",
+    "cat": "Usage: cat <file> — Displays file content.",
+    "man": "Usage: man <command> — Displays the manual for a command.",
+    "echo": "Usage: echo <text> — Displays a line of text.",
+    "clear": "Clears the terminal screen.",
+    "date": "Shows the current date and time.",
+    "uptime": "Shows how long the system has been running.",
+    "top": "Displays real-time system information.",
+    "df": "Shows disk space usage.",
+    "du": "Shows disk usage of files and directories.",
+    "grep": "Usage: grep <pattern> <file> — Searches for patterns in files.",
+    "find": "Usage: find <path> <options> — Searches for files and directories.",
+    "ps": "Displays information about active processes.",
+    "kill": "Usage: kill <pid> — Terminates processes.",
+    "chmod": "Usage: chmod <permissions> <file> — Changes file permissions.",
+    "chown": "Usage: chown <owner>:<group> <file> — Changes file ownership.",
+    "easter-egg": "You found the secret Easter Egg! Redirecting..."
+  },
+  "easterEgg": {
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  }
+}
