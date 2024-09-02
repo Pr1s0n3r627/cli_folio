@@ -1,0 +1,399 @@
+{
+    "jokes": [
+        "Why do programmers prefer dark mode? Because the light attracts bugs.",
+        "There are 10 types of people in the world: those who understand binary, and those who don't.",
+        "Why was the JavaScript developer sad? Because he didn’t know how to ‘null’ his feelings.",
+        "Why did the programmer go broke? Because he lost his domain in a bet.",
+        "Why did the developer go broke? Because he couldn't find a way to monetize his app."
+    ],
+    "quotes": [
+        "The computer was born to solve problems that did not exist before. — Bill Gates",
+        "Programs must be written for people to read, and only incidentally for machines to execute. — Harold Abelson",
+        "Talk is cheap. Show me the code. — Linus Torvalds",
+        "The best thing about a boolean is even if you are wrong, you are only off by a bit. — Anonymous",
+        "The best error message is the one that never shows up. — Thomas Fuchs"
+    ],
+    "motivational": [
+        "Don’t worry about the bug you’re stuck on today. Future You will thank you for the solution you’ll discover.",
+        "Keep pushing. Every line of code is a step closer to mastery.",
+        "The key to success is consistency, and you’re well on your way!",
+        "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful. — Albert Schweitzer",
+        "The only way to do great work is to love what you do. — Steve Jobs"
+    ],
+    "facts": [
+        "The first computer virus was created in 1986. It was called Brain.",
+        "There are over 700 programming languages in existence.",
+        "The first 1GB hard drive, released in 1980, weighed over 500 pounds.",
+        "The first computer mouse was made of wood.",
+        "The first computer programmer was a woman named Ada Lovelace.",
+        "The first computer bug was a real bug! In 1947, a moth caused a malfunction in the Harvard Mark II computer.",
+        "The longest word you can type using only the top row of a QWERTY keyboard is 'typewriter'.",
+        "The first computer mouse was invented by Douglas Engelbart in 1964 and was made of wood.",
+        "The first computer programmer was a woman named Ada Lovelace, who wrote the first algorithm for Charles Babbage's Analytical Engine in the 1840s.",
+        "The first computer virus was created in 1986 and was called Brain. It was created by two Pakistani brothers.",
+        "The first computer game was created in 1962 and was called Spacewar! It was developed by Steve Russell at MIT.",
+        "The first computer hard drive was invented in 1956 and could store only 5 megabytes of data.",
+        "The first computer mouse was called the 'X-Y Position Indicator for a Display System' and was invented by Douglas Engelbart.",
+        "The first computer bug was a real bug! In 1947, a moth caused a malfunction in the Harvard Mark II computer.",
+        "The first computer virus was created in 1986 and was called Brain. It was created by two Pakistani brothers."
+    ],
+    "inspire": [
+        "Your time is limited, so don’t waste it living someone else’s life. — Steve Jobs",
+        "Stay hungry, stay foolish. — Steve Jobs",
+        "The best way to predict the future is to invent it. — Alan Kay",
+        "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful. — Albert Schweitzer",
+        "The only way to do great work is to love what you do. — Steve Jobs",
+        "Believe you can and you're halfway there. — Theodore Roosevelt",
+        "The future belongs to those who believe in the beauty of their dreams. — Eleanor Roosevelt",
+        "Don't watch the clock; do what it does. Keep going. — Sam Levenson",
+        "The only limit to our realization of tomorrow will be our doubts of today. — Franklin D. Roosevelt",
+        "Success is not final, failure is not fatal: It is the courage to continue that counts. — Winston Churchill",
+        "The best preparation for tomorrow is doing your best today. — H. Jackson Brown Jr.",
+        "The only person you should try to be better than is the person you were yesterday. — Matty Mullins",
+        "The only limit to our realization of tomorrow will be our doubts of today. — Franklin D. Roosevelt",
+        "The future belongs to those who believe in the beauty of their dreams. — Eleanor Roosevelt",
+        "Don't watch the clock; do what it does. Keep going. — Sam Levenson",
+        "The only limit to our realization of tomorrow will be our doubts of today. — Franklin D. Roosevelt",
+        "Success is not final, failure is not fatal: It is the courage to continue that counts. — Winston Churchill",
+        "The best preparation for tomorrow is doing your best today. — H. Jackson Brown Jr.",
+        "The only person you should try to be better than is the person you were yesterday. — Matty Mullins"
+    ],
+    "anime": [
+        "Attack on Titan — Colossal battles, incredible storytelling.",
+        "Neon Genesis Evangelion — Existential mecha masterpiece.",
+        "Bleach — Soul Reapers fighting for balance and justice."
+    ],
+    "songrec": [
+        {
+            "songs": [
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/5M4yti0QxgqJieUYaEXcpw"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/10nyNJ6zNy2YVYLrcwLccB"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/63OQupATfueTdZMWTxW03A"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/50HCj9kEXIonBwRLXFWCr8"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/70LcF31zb1H0PyJoS1Sx1r"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/5Qv2Nby1xTr9pQyjkrc94J"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/0HPD5WQqrq7wPWR7P7Dw1i"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/0wEGo9LsSrSUz9HOtraWAO"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/2X485T9Z5Ly0xyaghN73ed"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/2a1iMaoWQ5MnvLFBDv4qkf"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/5hM5arv9KDbCHS0k9uqwjr"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/55q3Ro66yXWi9rsEddeEN4"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/0WQiDwKJclirSYG9v5tayI"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/37l31PrCNsg8baUjarNAi9"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/6WlmEymaXKMRs3D2c4j6os"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/1EryAkZ0VHstC6haIxVBiE"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/3lCb7ZYE3Fvie4JOPqpXfY"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/2rtGaCAeYtmcIvuZsvgTf6"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/5TxRUOsGeWeRl3xOML59Ai"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/52ojopYMUzeNcudsoz7O9D"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/6BrMEbPSSj55nQhkgf6DnE"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/3vkCueOmm7xQDoJ17W1Pm3"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/3IznIgmXtrUaoPWpQTy5jB"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/6LgJvl0Xdtc73RJ1mmpotq"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/4wEuNvb7oG8oZYrZPZ9rPr"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/2fuYa3Lx06QQJAm0MjztKr"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/1cCbsojaA6GIT7Y3zuMJ1q"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/0YJ9FWWHn9EfnN0lHwbzvV"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/2CVV8PtUYYsux8XOzWkCP0"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/0j2T0R9dR9qdJYsB7ciXhf"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/4sIFi8LpJWPvI5xviWFyA6"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/3pVXZ04pu8zYaiAHCrh6PV"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/0wEC0GNF74lAqrEFZJMl1m"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/5JInU1luIwpnMRU2DDollP"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/5WhtlIoxoZrMmuaWWEQhwV"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/5KUNwkaNf8l5A9sXZhiCgI"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/3Y1EvIgEVw51XtgNEgpz5c"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/3lzUeaCbcCDB5IXYfqWRlF"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/72cGBEqu7RitIOoACXYjfR"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/0dcu28YT8cXZH7JTIraszp"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/2g6tReTlM2Akp41g0HaeXN"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/5Gt9bxniM1SxN61yRzRhXL"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/1xaTREM89RbIxkcjlpf4Uw"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/2r32XiAWtZbT3eLUvf4pag"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/18YHbIhrleUkKKj2DvEp79"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/016z46SJwcRosW9Xb8JKmF"
+                },
+                {
+                    "name": "",
+                    "spotify_link": "https://open.spotify.com/track/1REVvAphiSTJyKQ1fDpHa4"
+                }
+            ]
+        }
+    ],
+    "trivia": [
+        {
+            "question": "Who invented Linux?",
+            "answer": "Linus Torvalds"
+        },
+        {
+            "question": "Which programming language was created by Guido van Rossum?",
+            "answer": "Python"
+        },
+        {
+            "question": "What is the name of the first high-level programming language?",
+            "answer": "Fortran"
+        },
+        {
+            "question": "Who painted the Mona Lisa?",
+            "answer": "Leonardo da Vinci"
+        },
+        {
+            "question": "What is the capital city of France?",
+            "answer": "Paris"
+        },
+        {
+            "question": "Who wrote the novel 'Pride and Prejudice'?",
+            "answer": "Jane Austen"
+        },
+        {
+            "question": "What is the largest planet in our solar system?",
+            "answer": "Jupiter"
+        },
+        {
+            "question": "Who is the lead singer of the band 'Queen'?",
+            "answer": "Freddie Mercury"
+        },
+        {
+            "question": "What is the chemical symbol for gold?",
+            "answer": "Au"
+        },
+        {
+            "question": "Who is the author of the 'Harry Potter' book series?",
+            "answer": "J.K. Rowling"
+        },
+        {
+            "question": "What is the tallest mountain in the world?",
+            "answer": "Mount Everest"
+        },
+        {
+            "question": "Who is the current President of the United States?",
+            "answer": "Joe Biden"
+        },
+        {
+            "question": "What is the largest ocean on Earth?",
+            "answer": "Pacific Ocean"
+        },
+        {
+            "question": "Who is the founder of Microsoft?",
+            "answer": "Bill Gates"
+        },
+        {
+            "question": "What is the chemical symbol for oxygen?",
+            "answer": "O"
+        },
+        {
+            "question": "Who is the artist behind the famous painting 'The Starry Night'?",
+            "answer": "Vincent van Gogh"
+        },
+        {
+            "question": "What is the currency of Japan?",
+            "answer": "Japanese yen"
+        },
+        {
+            "question": "Who is the lead guitarist of the band 'Led Zeppelin'?",
+            "answer": "Jimmy Page"
+        },
+        {
+            "question": "What is the largest desert in the world?",
+            "answer": "Sahara Desert"
+        },
+        {
+            "question": "Who is the author of the novel 'To Kill a Mockingbird'?",
+            "answer": "Harper Lee"
+        }
+    ],
+    "fortune": [
+        "Your code will compile successfully... after you debug that one hidden issue!",
+        "Today’s the day you finally solve that annoying bug that’s been haunting you for days.",
+        "In the near future, you will write code so efficient that your past self will feel jealous.",
+        "A sudden burst of inspiration will lead you to an elegant and innovative solution.",
+        "Your debugging skills will be praised by your colleagues and become the stuff of legends.",
+        "A rare and elusive bug will reveal itself to you, allowing you to fix it effortlessly.",
+        "Your code will run flawlessly, impressing both users and fellow developers alike.",
+        "An unexpected breakthrough will revolutionize the way you approach programming.",
+        "Your code will be recognized and celebrated as a masterpiece of software engineering.",
+        "A serendipitous encounter with a new technology will open up exciting possibilities for your projects.",
+        "Your programming skills will be in high demand, leading to exciting career opportunities.",
+        "You will find the perfect balance between simplicity and complexity in your code.",
+        "Your code will inspire others to write clean and elegant solutions.",
+        "A challenging problem will ignite your problem-solving skills and lead to a brilliant solution.",
+        "Your code will be the foundation for a successful and widely-used software application.",
+        "You will discover a new programming language that will greatly enhance your development skills."
+    ],
+    "compliment": [
+        "You're like a human compiler—fast, efficient, and nearly flawless!",
+        "You must be written in C++, because you're incredibly sharp.",
+        "You're not just a dev, you're an artist with code.",
+        "Your smile can light up any room.",
+        "You have a heart of gold and a beautiful soul.",
+        "Your kindness and compassion make the world a better place.",
+        "You have an amazing sense of style and always look fabulous.",
+        "Your positive energy is contagious and brightens everyone's day.",
+        "You have a unique and captivating personality that draws people in.",
+        "You're a true inspiration to those around you.",
+        "Your creativity knows no bounds and constantly amazes others.",
+        "You have a natural talent for making people feel valued and appreciated.",
+        "Your laughter is infectious and brings joy to everyone who hears it.",
+        "You have a remarkable ability to find beauty in the simplest things.",
+        "Your determination and perseverance are truly admirable.",
+        "You have a gift for making people feel heard and understood.",
+        "Your presence brings a sense of calm and tranquility to any situation.",
+        "You have a brilliant mind and a knack for solving complex problems.",
+        "Your generosity and selflessness are truly inspiring.",
+        "You have a magnetic personality that draws others towards you."
+    ],
+    "tea": [
+        "How about some jasmine tea? It’s perfect for an afternoon coding session.",
+        "Earl Grey, hot! Perfect for channeling your inner Starfleet captain.",
+        "Maybe a refreshing cup of green tea to keep you energized!"
+    ]
+}

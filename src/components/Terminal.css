@@ -30,11 +30,13 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   min-width: 120vh;
-  min-height: 80vh;
+  min-height: 70vh;
+  justify-content: end;
+  display: flex;
+    flex-direction: column;
 }
 
 .terminal-window {
-  height: 400px;
   /* background-color: #000; */
   color: #fff;
   padding: 15px;
@@ -42,7 +44,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   border-radius: 10px;
-  position: sticky;
+  position: relative;
   /* box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5); */
   border: 2px solid rgba(255, 255, 255, 0.05);
 }
@@ -63,7 +65,6 @@ body {
 .terminal-input-form {
   display: flex;
   align-items: bottom;
-  margin-top: 10px;
 }
 
 .terminal-prompt {
@@ -80,6 +81,7 @@ body {
   padding: 5px;
   outline: none;
   width: 100%;
+  position: bottom;
 }
 
 .terminal-input:focus {

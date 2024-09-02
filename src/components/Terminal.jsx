@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Terminal.css';
+import terminalContent from './terminalContent.json';
+
 const Terminal = () => {
   const [command, setCommand] = useState('');
   const [output, setOutput] = useState([]);
@@ -25,6 +27,11 @@ const Terminal = () => {
     processCommand(command.trim().toLowerCase());
   };
 
+  const getRandomElement = (category) => {
+    const items = terminalContent[category];
+    return items[Math.floor(Math.random() * items.length)];
+  };
+
   const processCommand = (cmd) => {
     switch (cmd) {
       case 'help':
@@ -44,6 +51,7 @@ const Terminal = () => {
       case 'clear':
         setOutput([]);
         break;
+      
       case 'about':
         addOutput(
           <div className="about-container">
@@ -141,6 +149,69 @@ const Terminal = () => {
           </p>
         );
         break;
+        case 'joke':
+          output = getRandomElement('jokes');
+          addOutput(output);
+          break;
+        case 'quote':
+          output = getRandomElement('quotes');
+          addOutput(output);
+          break;
+        case 'motivate':
+          output = getRandomElement('motivational');
+          addOutput(output);
+          break;
+        case 'fact':
+          output = getRandomElement('facts');
+          addOutput(output);
+          break;
+        case 'inspireme':
+          output = getRandomElement('inspire');
+          addOutput(output);
+          break;
+        case 'anime':
+          output = getRandomElement('anime');
+          addOutput(output);
+          break;
+        case 'songrec':
+          const song = getRandomElement('songrec');
+          addOutput(output);
+          output = (
+            <div>
+              <p>{song.title}</p>
+              <iframe
+                src={`https://open.spotify.com/embed/track/${song.link.split('/').pop()}`}
+                width="300"
+                height="80"
+                allow="encrypted-media"
+              />
+            </div>
+          );
+          addOutput(output);
+          break;
+        case 'trivia':
+          const trivia = getRandomElement('trivia');
+          output = `${trivia.question} Answer: ${trivia.answer}`;
+          addOutput(output);
+          break;
+        case 'fortune':
+          output = getRandomElement('fortune');
+          addOutput(output);
+          break;
+        case 'compliment':
+          output = getRandomElement('compliment');
+          addOutput(output);
+          break;
+        case 'tea':
+          output = getRandomElement('tea');
+          addOutput(output);
+          break;
+        /* 
+        case 'coffee':
+          output = getRandomElement('coffee');
+          addOutput(output);
+          break;
+        */
       default:
         addOutput(`Command not found: ${cmd}. Type 'help' for a list of commands.`);
     }
