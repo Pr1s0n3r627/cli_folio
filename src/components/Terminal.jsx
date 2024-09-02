@@ -1,47 +1,64 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import commandsData from '../assets/commands.json'; // Ensure correct path
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'; // Import icons
+import './Terminal.css'; // Ensure this CSS file is in the correct location
 
 const Terminal = () => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState([]);
+  const [commands, setCommands] = useState({});
+  const [typingIndex, setTypingIndex] = useState(-1);
+  const [typingContent, setTypingContent] = useState('');
 
-  const commands = {
-    help: 'Available commands: help, about, projects, easter-egg',
-    about: 'This is a personal portfolio terminal.',
-    projects: 'Check out my projects on GitHub.',
-    'easter-egg': 'Congrats! You found the easter egg.'
-  };
+  useEffect(() => {
+    setCommands(commandsData.commands);
+  }, []);
 
   const handleCommand = (command) => {
     if (commands[command]) {
-      setOutput(prevOutput => [...prevOutput, `> ${command}`, commands[command]]);
+      if (command === 'easter-egg') {
+        window.location.href = commandsData.easterEgg.url;
+      } else {
+        setOutput(prevOutput => [...prevOutput, `> ${command}`, commands[command]]);
+      }
     } else {
       setOutput(prevOutput => [...prevOutput, `> ${command}`, 'Command not found.']);
     }
   };
 
+/*// Start typing animation for the output
+const startTypingAnimation = (text) => {
+  setTypingIndex(0);
+  setTypingContent('');
+  const typingInterval = setInterval(() => {
+    if (typingIndex < text.length) {
+      setTypingContent(prevContent => prevContent + text[typingIndex]);
+      setTypingIndex(prevIndex => prevIndex + 1);
+    } else {
+      clearInterval(typingInterval);
+    }
+  }, 50);
+};*/
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (input.trim()) {
       handleCommand(input.trim());
-      setInput(''); // Clear input after submission
+      setInput(''); // Clear the input after submission
     }
   };
 
   return (
-    <div style={{
-      backgroundColor: '#000',
-      padding: '20px',
-      color: '#61dafb',
-      minHeight: '100vh',
-      width: '100vw',
-      fontFamily: 'monospace',
-      fontSize: '16px',
-      overflowY: 'auto',
-      boxSizing: 'border-box'
-    }}>
-      <div style={{ whiteSpace: 'pre-wrap' }}>
+    <div className="terminal-container">
+      <div className="terminal-output">
         {output.map((line, index) => (
-          <div key={index} style={{ marginBottom: '10px' }}>{line}</div>
+          <div key={index}>
+            {index === output.length - 1 ? (
+              <span className="typing">{typingContent}</span>
+            ) : (
+              line
+            )}
+          </div>
         ))}
       </div>
       <form onSubmit={handleSubmit}>
@@ -50,20 +67,20 @@ const Terminal = () => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Type a command"
-          style={{
-            width: '100%',
-            padding: '8px',
-            fontSize: '16px',
-            color: '#61dafb',
-            backgroundColor: 'transparent',
-            border: 'none',
-            outline: 'none',
-            marginTop: '10px',
-            fontFamily: 'monospace',
-            boxSizing: 'border-box'
-          }}
+          className="terminal-input"
         />
       </form>
+      <div className="social-icons">
+        <a href="[GitHub Link]" className="icon" aria-label="GitHub">
+          <i className="fab fa-github"></i>
+        </a>
+        <a href="[Instagram Link]" className="icon" aria-label="Instagram">
+          <i className="fab fa-instagram"></i>
+        </a>
+        <a href="[LinkedIn Link]" className="icon" aria-label="LinkedIn">
+          <i className="fab fa-linkedin"></i>
+        </a>
+      </div>
     </div>
   );
 };
