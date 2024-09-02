@@ -1,117 +1,124 @@
 /* Terminal container styling */
 .terminal-container {
-    background-color: #000; /* Black background for the terminal look */
-    color: #00ff00; /* Bright green text color for a classic terminal effect */
+    background-color: #1e1e1e; /* Dark background */
+    color: #00ff41; /* Classic hacker green */
+    font-family: 'Courier New', Courier, monospace; /* Typing-style font */
+    font-size: 16px;
     padding: 20px;
     border-radius: 10px;
-    min-height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
-    font-family: 'Monaco', monospace; /* Use a monospace font, replace with Mr Robot if needed */
-    font-size: 16px;
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
-    box-sizing: border-box; /* Ensure padding is included in width/height calculations */
-    position: relative; /* Position relative for positioning the social icons */
-    border: 2px solid #00ff00; /* Green border for a classic terminal look */
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Adding depth */
   }
   
-  /* Terminal output styling */
+  /* Output lines styling */
   .terminal-output {
-    white-space: pre-wrap; /* Preserve whitespace and line breaks */
-    margin-bottom: 10px; /* Space between lines */
+    white-space: pre-wrap;
+    line-height: 1.5;
   }
   
-  /* Terminal text typing animation */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+  /* Each command output */
+  .output-line {
+    margin-bottom: 15px;
   }
   
-  .terminal-output span.typing {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid #00ff00; /* Cursor effect */
-    animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #00ff00; }
-  }
-  
-  /* Input field styling */
+  /* Terminal input styling */
   .terminal-input {
-    width: 100%; /* Full width of the container */
-    padding: 8px;
+    width: 100%;
+    padding: 12px;
+    background-color: #121212;
+    border: none;
+    color: #00ff41;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
-    color: #00ff00; /* Match text color */
-    background-color: transparent; /* Transparent background */
-    border: none; /* No border */
-    outline: none; /* No outline on focus */
-    margin-top: 10px; /* Space above the input field */
-    font-family: 'Monaco', monospace; /* Use a monospace font, replace with Mr Robot if needed */
-    box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+    border-radius: 5px;
+    margin-top: 10px;
   }
   
-  /* Social icons container */
-  .social-icons {
-    position: absolute; /* Position the social icons at the bottom right */
-    bottom: 20px;
-    right: 20px;
+  /* Project titles */
+  .project-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #61dafb;
+    margin-bottom: 5px;
   }
   
-  /* Social icon styling */
-  .social-icons .icon {
-    color: #00ff00; /* Match text color */
-    font-size: 24px; /* Adjust size as needed */
-    margin: 0 10px; /* Space between icons */
-    transition: color 0.3s, transform 0.3s; /* Smooth color and scale transition */
+  /* Project description */
+  .project-description {
+    color: #f5f5f5;
+    margin-bottom: 10px;
   }
   
-  /* Social icon hover effect */
-  .social-icons .icon:hover {
-    color: #ff00ff; /* Change color on hover for a visual effect */
-    transform: scale(1.1); /* Slightly increase the size on hover */
+  /* Project GitHub link */
+  .project-link {
+    color: #61dafb;
+    text-decoration: none;
   }
   
-  /* Command not found message styling */
-  .command-not-found {
-    color: #ff0000; /* Red color for errors */
-    font-style: italic; /* Italicize error messages */
+  .project-link:hover {
+    text-decoration: underline;
   }
   
-  /* About section styling */
-  .about-section {
-    margin: 20px 0; /* Space above and below the section */
+  /* About command photo styling */
+  .about-photo {
+    display: block;
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular photo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Photo shadow */
   }
   
-  .about-section img {
-    max-width: 150px; /* Limit the width of the image */
-    border-radius: 50%; /* Circular image */
-    border: 2px solid #00ff00; /* Green border around the image */
-    margin-bottom: 10px; /* Space below the image */
+  /* Contact information styling */
+  .contact-info a {
+    color: #61dafb;
+    text-decoration: none;
   }
   
-  /* Projects section styling */
-  .projects-section {
-    margin: 20px 0; /* Space above and below the section */
+  .contact-info a:hover {
+    text-decoration: underline;
   }
   
-  .projects-section .project {
-    margin-bottom: 20px; /* Space between projects */
+  /* Animation for the input line cursor */
+  .terminal-input::placeholder {
+    color: #00ff41;
+    animation: blink 1s step-end infinite;
   }
   
-  /* Skills section styling */
-  .skills-section {
-    margin: 20px 0; /* Space above and below the section */
+  /* Blink effect for the cursor */
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #00ff41;
+    }
   }
   
-  .skills-section .skill {
-    display: inline-block;
-    background-color: #00ff00; /* Skill badge background */
-    color: #000; /* Skill badge text color */
-    padding: 5px 10px; /* Padding inside the badge */
-    border-radius: 5px; /* Rounded corners */
-    margin: 5px; /* Space between badges */
+  /* Smooth fade-in animation for each command's output */
+  .output-line {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .about-photo {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    float: right; /* Float to the right of the text */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Shadow for depth */
   }
   
