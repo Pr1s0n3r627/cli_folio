@@ -1,90 +1,198 @@
 /* Terminal.css */
 
-/* General Styles */
-.terminal {
-    background-color: #000;
-    color: #00ff00; /* Classic green text */
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    min-height: 100vh;
-    width: 100vw;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  animation: animateBg 14s linear infinite;
+  background-image: linear-gradient(90deg,#ff0000,#ffff00,#00ff00,#00ffff,#0000ff,#ff00ff,#ff0000,#ffff00);
+  background-size: 700% 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes animateBg {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
   }
-  
-  /* Output Section */
-  .output {
-    white-space: pre-wrap; /* Preserve line breaks and spaces */
-    margin-bottom: 10px;
-    flex: 1;
-    overflow-y: auto; /* Allow scrolling if content overflows */
+
+.terminal-container {
+  width: 80%;
+  max-width: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  min-width: 120vh;
+  min-height: 80vh;
+}
+
+.terminal-window {
+  height: 400px;
+  /* background-color: #000; */
+  color: #fff;
+  padding: 15px;
+  overflow-y: scroll;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 10px;
+  position: sticky;
+  /* box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5); */
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.terminal-output {
+  margin-bottom: 10px;
+}
+
+.terminal-command {
+  color: #1affd1;
+  font-weight: bold;
+}
+
+.terminal-response {
+  color: #f5f5f5;
+}
+
+.terminal-input-form {
+  display: flex;
+  align-items: bottom;
+  margin-top: 10px;
+}
+
+.terminal-prompt {
+  color: #00ff76;
+  font-weight: bold;
+}
+
+.terminal-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #00ff76;
+  color: #00ff76;
+  font-size: 16px;
+  padding: 5px;
+  outline: none;
+  width: 100%;
+}
+
+.terminal-input:focus {
+  border-bottom: 2px solid #ff0076;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00ff76;
+  margin-right: 20px;
+  transition: transform 0.5s ease;
+}
+
+.about-photo:hover {
+  transform: scale(1.1);
+}
+
+.about-text {
+  color: #fff;
+  max-width: 600px;
+}
+
+.about-text h2 {
+  margin: 0;
+  color: #ff0076;
+  font-size: 24px;
+  text-shadow: 2px 2px 10px rgba(255, 0, 118, 0.8);
+}
+
+.about-text p {
+  margin-top: 10px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 0, 118, 0.4), 0 0 20px rgba(255, 0, 118, 0.4), 0 0 30px rgba(255, 0, 118, 0.4), 0 0 40px rgba(255, 0, 118, 0.4);
   }
-  
-  /* Individual Line Styling */
-  .line {
-    margin-bottom: 10px;
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 118, 0.4), 0 0 40px rgba(0, 255, 118, 0.4), 0 0 60px rgba(0, 255, 118, 0.4), 0 0 80px rgba(0, 255, 118, 0.4);
   }
-  
-  /* Photo Styling */
-  .photo {
-    max-width: 50%; /* Ensure photo fits within terminal width */
-    border-radius: 8px;
-    margin-top: 10px;
-    display: block;
-    /* Center the photo horizontally */
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.terminal-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background: linear-gradient(45deg, rgba(255, 0, 118, 0.7), rgba(0, 255, 118, 0.7), rgba(0, 255, 255, 0.7), rgba(118, 0, 255, 0.7));
+  background-size: 300% 300%;
+  animation: rainbowPulse 4s ease infinite;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+@keyframes rainbowPulse {
+  0%, 100% {
+    background-position: 0% 50%;
   }
-  
-  /* Input Field Styling */
-  .input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #00ff00;
-    background-color: #000;
-    color: #00ff00;
-    outline: none;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    box-sizing: border-box;
-    /* Add transition for focus effect */
-    transition: border-color 0.3s ease-in-out;
+  50% {
+    background-position: 100% 50%;
   }
-  
-  /* Placeholder Text Styling */
-  input::placeholder {
-    color: #00ff00;
+}
+
+/* Scrollbar styling */
+.terminal-window::-webkit-scrollbar {
+  width: 10px;
+}
+
+.terminal-window::-webkit-scrollbar-track {
+  background: #0e0e0e;
+}
+
+.terminal-window::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 118, 0.7);
+  border-radius: 10px;
+}
+
+.terminal-window::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 118, 0.7);
+}
+
+/* .terminal-container:hover {
+  animation: pulse 3s infinite;
+} */
+
+/* Easter Egg Animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 0, 118, 0.3), 0 0 20px rgba(255, 0, 118, 0.3), 0 0 30px rgba(255, 0, 118, 0.3);
   }
-  
-  /* Animation for Text Typing Effect */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 118, 0.3), 0 0 40px rgba(0, 255, 118, 0.3), 0 0 60px rgba(0, 255, 118, 0.3);
   }
-  
-  /* Animation for Cursor Blink */
-  @keyframes blink {
-    0% { border-right-color: rgba(0, 255, 0, 0.75); }
-    100% { border-right-color: transparent; }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 0, 118, 0.3), 0 0 20px rgba(255, 0, 118, 0.3), 0 0 30px rgba(255, 0, 118, 0.3);
   }
-  
-  /* Typing Effect for Command Output */
-  .typing-effect {
-    display: inline-block;
-    overflow: hidden; /* Hide overflow text */
-    white-space: nowrap;
-    border-right: 2px solid #00ff00; /* Cursor effect */
-    animation: typing 2s steps(30, end), blink 0.75s step-end infinite;
-  }
-  
-  /* Example usage */
-  .typing-example {
-    color: #00ff00;
-    border-right: 2px solid #00ff00;
-    padding-right: 5px; /* Add space for the cursor */
-  }
-  
+}
+
+.terminal-response p {
+  animation: glow 2s ease-in-out infinite;
+  color: #fff;
+  font-weight: bold;
+}
